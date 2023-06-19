@@ -1,0 +1,46 @@
+number
+-------
+number can be integer or decimal or octal or hexa,
+
+aval = 10
+bval = 3.4
+
+string
+-------
+string is defined in single or double or triple quotes.
+
+aname = 'python programming'
+bname = "unix scripting"
+cname = """java programming"""
+
+
+list  ( mutable )
+------
+list contains set of elements.
+Elements can be numbers or strings or any combination.
+list elements are defind in [].
+
+alist = [10,20,30,40]
+blist = ["java',34,43.34,"unix"]
+
+
+tuple  ( immutable , unchangeable , uneditable )
+---------
+tuple contains set of elements.
+Elements can be numbers or strings or any combination.
+tuple elements are defind in ().
+**** Elements inside tuple cannot be modified directly *****
+
+atup = (45,34,32)
+
+
+
+
+
+
+
+
+dictionary
+
+
+set
