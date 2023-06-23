@@ -1,0 +1,421 @@
+write a  program to read filename with extension from the keyboard and the file and extension separately.
+
+
+OUtput:
+
+Enter any filname : info.py
+
+Filename : info
+extension: py
+
+
+filename= input("Enter any filename:")
+
+data = filename.split(".")
+print("filename :",data[0])
+print("extension:",data[1])
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+book = {"chap1":[10,'UK'] ,"chap2":[20,'US']}
+write a program to add '200pages' to the list of chap1  and
+                       '400pages' to the list of chap2
+
+
+Output:
+book = {"chap1":[10,'UK','200pages'] ,"chap2":[20,'US','400pages']}
+
+
+
+book = {"chap1":[10,'UK'] ,"chap2":[20,'US']}
+
+book['chap1'].append('200pages')
+book['chap2'].append('400pages')
+
+print(book)
+
+
+
+
+book = {"chap1":[10,'UK','Mark'] ,"chap2":[20,'US','Pet']}
+
+book['chap1'][2] = '200pages'
+book['chap2'][2] = '400pages'
+print(book)
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+write a program for performing the below operaitons
+
+1. define empty tuple
+2. append  "unix" to the tuple
+3. append few more elements like 'spark', 'scala','hadoop',sccm' to the list
+4  append few more elements like 'c','cpp','java','salesforce','sap','unix' to the list
+5.  remove java
+6  remove salesforce -
+7. add  'oracle' at the index 0
+8. add ' mongodb' at the index 5
+9. reverse all the elements
+10. display the total.  no. of eleents of the list
+11. display the total count of 'unix' in the list
+
+
+data = ()
+alist = list(data)
+alist.append('unix')
+alist.extend(['spark', 'scala','hadoop','sccm'])
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+write a program to capture 2 numbers from the keyboard and display its sum
+
+
+Enter first number : 10
+Enter second number: 20
+
+Total : 30
+
+
+first = input('Enter first number:')
+second = input("Enter second number :")
+
+output  = int(first) + int(second)
+print("SUm of numbers :",output)
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+define two lists
+alist = [10,20,30,40,50,10]
+blist = [40,50,60,70,80]
+
+display all the UNIQUE elements of both alist and blist  
+display all the COMMON elements of both alist and blist  
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+write  a program to capture some delimeted string from the keyboard and split the string with comma and display the length after splitting.
+
+Output:
+Enter any delimited string :  python,perl,unix,scala,spark
+
+List elements are : [ python , perl, unix,scala , spark ]
+Length of the list  : 5
+
+
+
+
+alist = [10,20,30,40,50,10]
+blist = [40,50,60,70,80]
+
+aset = set(alist)
+bset = set(blist)
+
+print("union:",aset.union(bset))
+print("intersection :",aset.intersection(bset))
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+write a program to display the below IP addresses
+
+192.168.0.1
+192.168.0.2
+192.168.0.3
+..
+..
+192.168.0.10
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+write a program to display the below IP addresses
+
+192.168.0.1
+192.168.0.2
+192.168.0.3
+..
+..
+192.168.0.10
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+write a program to capture any string from the keyboard and perform the below
+
+if the string is defined in uppercase......   convert the string to lower and display it
+
+if the string is defined in lowercase ...... convert the string to upper and display it.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+define list as below
+
+lang  = ["spark","spark","spark","java","unix","unix","python","python"]
+
+write a program to display each Unique iteam and the no.of times it is repeated
+
+Spark  : 3 times
+java   :  1 time
+unix   :  2 times
+python : 2 times
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+define some list as below
+
+alist = ["google","oracle","microsoft"]
+
+write a program to
+add "http://www"  at the beginning and  
+add ".com" at tht end of the string
+
+Output:
+http://www.google.com
+http://www/.oracle.com
+http://www.microsoft.com
+	
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+define some list as below
+
+domains = ["google","www.unix","oracle.com"]
+
+write a program
+
+to add "www"  at the beginning  if the string is not starting with "www"
+  and
+".com" at the end of each string if the string is not ending with ".com"
+
+Output:
+www.google.com
+www.unix.com
+www.oracle.com
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+alist= [
+  {
+    "login": "mojombo",
+    "id": 1,
+    "node_id": "MDQ6VXNlcjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mojombo",
+    "html_url": "https://github.com/mojombo",
+    "followers_url": "https://api.github.com/users/mojombo/followers",
+    "following_url": "https://api.github.com/users/mojombo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mojombo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mojombo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mojombo/subscriptions",
+    "organizations_url": "https://api.github.com/users/mojombo/orgs",
+    "repos_url": "https://api.github.com/users/mojombo/repos",
+    "events_url": "https://api.github.com/users/mojombo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mojombo/received_events",
+    "type": "User",
+    "site_admin": False
+  },
+  {
+    "login": "defunkt",
+    "id": 2,
+    "node_id": "MDQ6VXNlcjI=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/2?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/defunkt",
+    "html_url": "https://github.com/defunkt",
+    "followers_url": "https://api.github.com/users/defunkt/followers",
+    "following_url": "https://api.github.com/users/defunkt/following{/other_user}",
+    "gists_url": "https://api.github.com/users/defunkt/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/defunkt/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/defunkt/subscriptions",
+    "organizations_url": "https://api.github.com/users/defunkt/orgs",
+    "repos_url": "https://api.github.com/users/defunkt/repos",
+    "events_url": "https://api.github.com/users/defunkt/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/defunkt/received_events",
+    "type": "User",
+    "site_admin": False
+  }
+]
+
+ write a program to display the below toutput
+
+LOGIN      : mojombo
+site admin : False
+
+
+LOGIN      : defunkt
+site admin : False
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+define a list below
+
+colors = [
+{
+"colors": "red",
+"values": "#f00"
+},
+{
+"colors": "green",
+"values": "#0f0"
+},
+{
+"colors": "blue",
+"values": "#00f"
+},
+{
+"colors": "cyan",
+"values": "#0ff"
+},
+{
+"colors": "magenta",
+"values": "#f0f"
+},
+{
+"colors": "yellow",
+"values": "#ff0"
+},
+{
+"colors": "black",
+"values": "#000"
+}
+]
+write a program to display all the colors and its values.
+
+red(#f00)
+green(#0f0)
+blue(#00f)
+cyan(#0ff)
+magenta(#f0f)
+yellow(#ff0)
+black(#000)
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+define a dictionray as below
+
+{
+"id": "0001",
+"type": "donut",
+"name": "Cake",
+"image":
+{
+"url": "images/0001.jpg",
+"width": 200,
+"height": 200
+},
+"thumbnail":
+{
+"url": "images/thumbnails/0001.jpg",
+"width": 32,
+"height": 32
+}
+}
+
+write a program to display the below output:
+
+id           : 0001
+type         :donut
+name       : Cake
+image.width   : 200
+image.height : 200
+image.url      : images/0001.jpg
+thumbnail.width   : 32
+thumbnail.height : 32
+thumbnail.url      : images/0001.jpg
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+data = {"menu": {
+  "id": "file",
+  "value": "File",
+  "popup": {
+    "menuitem": [
+      {"value": "New", "onclick": "CreateNewDoc()"},
+      {"value": "Open", "onclick": "OpenDoc()"},
+      {"value": "Close", "onclick": "CloseDoc()"}
+    ]
+  }
+}}
+
+Output
+--------
+New
+Open
+Close
+
+
+
+for item in data['menu']['popup']['menuitem']:
+    print(item['value'])
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+define dictionary as below
+
+
+ydict = {
+  "kind": "youtube#searchListResponse",
+  "etag": "1-m2yskBQFythfE4irbTIeOgYYfBU/PaiEDiVxOyCWelLPuuwa9LKz3Gk",
+  "nextPageToken": "CAUQAA",
+  "regionCode": "KE",
+  "pageInfo": {
+    "totalResults": 4249,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#searchResult",
+      "etag": "2-m2yskBQFythfE4irbTIeOgYYfBU/QpOIr3QKlV5EUlzfFcVvDiJT0hw",
+      "id": {
+        "kind": "youtube#channel",
+        "channelId": "UCJowOS1R0FnhipXVqEnYU1A"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "3-yskBQFythfE4irbTIeOgYYfBU/AWutzVOt_5p1iLVifyBdfoSTf9E",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "Eqa2nAAhHN0"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "4-m2yskBQFythfE4irbTIeOgYYfBU/2dIR9BTfr7QphpBuY3hPU-h5u-4",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "IirngItQuVs"
+      }
+    }
+  ]
+}
+
+
+write a program to display all etags   from the dictionary
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
